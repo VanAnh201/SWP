@@ -1,0 +1,150 @@
+/* register.css */
+.register-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.register-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-img {
+  max-width: 100%;
+  height: auto;
+  padding: 40px;
+}
+
+
+  .register-right {
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ddd; /* ✅ Add this line */
+}
+
+
+
+.register-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.logo {
+  width: 150px;
+  margin: 0 auto 10px auto;
+  display: block;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+input,
+select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.phone-group {
+  display: flex;
+  gap: 8px;
+}
+
+.country-code {
+  width: 30%;
+}
+
+input[type='tel'] {
+  flex: 1;
+}
+
+.checkbox-label {
+  font-size: 13px;
+  color: #333;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.5;
+}
+
+.link {
+  color: #f60;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.policy-text {
+  font-size: 12px;
+  color: #888;
+}
+
+.register-button {
+  background-color: #f60;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.divider {
+  text-align: center;
+  margin: 15px 0;
+  position: relative;
+}
+.divider::before,
+.divider::after {
+  content: '';
+  height: 1px;
+  width: 40%;
+  background-color: #ccc;
+  position: absolute;
+  top: 50%;
+}
+.divider::before {
+  left: 0;
+}
+.divider::after {
+  right: 0;
+}
+
+.social-button {
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 6px;
+  background: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fb {
+  color: #3b5998;
+}
+
+.google {
+  color: #db4437;
+}
+
+.error-msg {
+  color: red;
+  font-size: 14px;
+  margin-top: -5px;
+}
