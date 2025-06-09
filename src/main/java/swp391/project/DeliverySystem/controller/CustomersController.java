@@ -22,7 +22,6 @@ import java.util.List;
 public class CustomersController {
     private CustomersService customersService;
 
-    //Build your create APIs here
     @PostMapping
     public ResponseEntity<CustomersDTO> createCustomers(@RequestBody CustomersDTO customersDTO) {
         CustomersDTO savedCustomers = customersService.createCustomers(customersDTO);

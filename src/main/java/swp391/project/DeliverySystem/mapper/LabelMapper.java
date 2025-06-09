@@ -7,7 +7,7 @@ public class LabelMapper {
     public static LabelDTO mapToLabelDTO(Label label) {
         if (label == null) return null;
         return new LabelDTO(
-            label.getId() != null ? label.getId().intValue() : null,
+            label.getId(),
             label.getLabelName(),
             label.getDescription(),
             label.getContactInfo(),
